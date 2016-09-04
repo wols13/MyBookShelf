@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New account | MyBookshelf</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+       <script src="registrationValidate.js"></script>
+        <link rel="stylesheet" id="pacifico-css" href="http://fonts.googleapis.com/css?family=Pacifico&amp;ver=3.5.2" type="text/css" media="all">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+    <div id="login-div" style="height: 460px; top: calc(50% - 230px);">
+        <header>
+            <div id="appName2" style="text-align: center; margin: 3px 0 0;">mybookshelf</div>
+        </header>
+        <form action="create_profile.php" method="post">
+        <input name="firstname" type="text" placeholder="First name" /><br>
+        <input name="lastname" type="text" placeholder="Last name" /><br>
+        <input onkeyup="validateUsername()" id="username" name="username" type="text" placeholder="Preferred username" /><i id="checkUsername"></i><br>
+        <input id="pass1" name="password" type="password" placeholder="Chose a password" /><br>
+        <input onkeyup="verifyPassword()" id="pass2" name="confirmPassword" type="password" placeholder="Confirm password" /><i id="checkPassword"></i><br>
+        <input onkeyup="validateEmail()" id="email" name="email" type="email" placeholder="Email" /><i id="checkEmail"></i><br>
+        <a href="index.php">Already have an account?</a>
+        <input id="login-button" type="submit" value="Continue" />
+        </form>
+    </div>
+    </body>
+</html>
